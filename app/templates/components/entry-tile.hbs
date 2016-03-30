@@ -1,7 +1,11 @@
-{{#link-to 'entry' entry.id}}<li>{{entry.title}}</li>{{/link-to}}
-<li>{{entry.author}}</li>
-<li>{{entry.date}}</li>
-<li>{{entry.post}}</li>
+
+<div class = "center">
+
+{{#link-to 'entry' entry.id}}<h1>{{entry.title}}</h1>{{/link-to}}
+<p>Date Posted: {{entry.date}}</p>
+
 {{update-entry entry=entry updatePost="updatePost"}}
-<button {{action 'deletePost' entry}}>Delete Post</button>
+<button class = "btn btn-info"{{action 'deletePost' entry}}>Delete Post</button>
 <hr />
+
+</div>

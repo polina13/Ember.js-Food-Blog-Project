@@ -6,13 +6,20 @@ export default Ember.Component.extend({
     entryFormShow() {
       this.set('addNewEntry', true);
     },
+    entryFormHide() {
+      this.set('addNewEntry', false);
+    },
     savePost() {
       var params = {
         author: this.get('author'),
-        date: this.get('date'),
+        // date: this.get('date'),
+        date: new Date(),
+
         post: this.get('post'),
         title: this.get('title')
       };
+      this.set('addNewEntry', false);
+
       this.sendAction('savePost', params);
     }
   }

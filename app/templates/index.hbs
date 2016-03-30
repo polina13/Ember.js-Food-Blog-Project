@@ -1,9 +1,7 @@
-<h1>Blog List</h1>
+<ul>
+  {{#each model as |entry| }}
+    {{entry-tile updatePost="updatePost" deletePost= "deletePost" entry=entry}}
+  {{/each}}
+</ul>
 
-  <ul>
-    {{#each model as |entry| }}
-      {{entry-tile updatePost="updatePost" deletePost= "deletePost" entry=entry}}
-    {{/each}}
-  </ul>
-
-  {{new-entry savePost = "savePost"}}
+{{new-entry savePost = "savePost"}}

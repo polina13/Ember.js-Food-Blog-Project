@@ -1,0 +1,27 @@
+.sidebar {
+  border-left: 1px solid black;
+  height: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  color: #008040;
+}
+/*
+.flex-item {
+   display: block;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}*/
+
+#post {
+  height: 200px;
+  width: 100%;
+}

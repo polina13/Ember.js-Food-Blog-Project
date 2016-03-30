@@ -1,16 +1,43 @@
 <div class = "container">
 
 <header>
-<h2 id="title"><h1>Welcome To The Portland Food Blog</h1>
-</h2>
+  <div class="center jumbotron">
+    <h1 class="main-heading">Welcome To The Portland Food Blog</h1><br>
+      <h4 class="sub-heading">A grand tour of the science of cooking explored through popular dishes and blogs about them.</h4>
+
+  </div>
 </header>
+
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+      {{#link-to 'index'}}<a class="navbar-brand" href="#">Home</a>{{/link-to}}
+      {{#link-to 'contact'}}<a class="navbar-brand" href="#">Contact</a>{{/link-to}}
+      {{#link-to 'about'}}<a class="navbar-brand" href="#">About</a>{{/link-to}}
+    </div>
+
+</nav>
+
+<div class = "row">
+  <div class = "col-sm-8">
 
 {{outlet}}
 
 <footer>
-  {{#link-to 'index'}}Home{{/link-to}}
-  {{#link-to 'about'}}About{{/link-to}}
-  {{#link-to 'contact'}}Contact{{/link-to}}
-</footer>
 
+</footer>
+</div>
+<div class = "sidebar col-sm-4">
+
+<h1>Recent Posts</h1>
+<li><a href = "http://localhost:4200/entry/-KE8NL7E5Qn3iiC8yCBf">Best Food Carts in Portland</a></li>
+<li><a href = "http://localhost:4200/entry/-KE8PcFTMxMW8GHrhm90">Masu Sushi in SW</a></li>
+
+<h1>Social Networking</h1>
+<img src = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnRdLzF9GV16qeRp8_jPlT-2bwoMKke0EJcR-0rMCGfZxzb2gy" height = "100" width = "auto">
+<img src = "http://www.freelargeimages.com/wp-content/uploads/2015/05/Twitter_Logo_Hd_Png_06.jpg" height = "100" width = "auto">
+
+
+</div>
+
+</div>
 </div>
