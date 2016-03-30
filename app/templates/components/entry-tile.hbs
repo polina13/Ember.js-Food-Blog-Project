@@ -1,7 +1,7 @@
-{{yield}}
-
-<li>{{entry.title}}</li>
+{{#link-to 'entry' entry.id}}<li>{{entry.title}}</li>{{/link-to}}
 <li>{{entry.author}}</li>
 <li>{{entry.date}}</li>
 <li>{{entry.post}}</li>
+{{update-entry entry=entry updatePost="updatePost"}}
+<button {{action 'deletePost' entry}}>Delete Post</button>
 <hr />

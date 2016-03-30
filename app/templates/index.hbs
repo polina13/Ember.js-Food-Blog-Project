@@ -2,8 +2,8 @@
 
   <ul>
     {{#each model as |entry| }}
-      {{entry-tile entry=entry}}
+      {{entry-tile updatePost="updatePost" deletePost= "deletePost" entry=entry}}
     {{/each}}
   </ul>
 
-  {{new-entry}}
+  {{new-entry savePost = "savePost"}}

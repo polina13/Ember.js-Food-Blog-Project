@@ -1,6 +1,6 @@
+{{#if addNewEntry}}
 <div>
   <form>
-    
     <div class="form-group">
       <label for="title">Title</label>
       {{input value=title id="title"}}
@@ -24,3 +24,6 @@
     <button {{action 'savePost'}}>Save</button>
   </form>
 </div>
+{{else}}
+<button {{action 'entryFormShow'}}>Update Post</button>
+{{/if}}
