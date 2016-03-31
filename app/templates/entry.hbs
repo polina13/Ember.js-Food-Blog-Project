@@ -2,5 +2,11 @@
 
 
 {{entry-detail model=model}}
-<!-- {{comment-tile model=model}} -->
 {{new-comment entry=model saveText="saveText"}}
+
+<hr />
+<!-- {{comment-tile comment=model}} -->
+{{#each model.comments as |comment|}}
+<textarea>{{comment.text}}</textarea>
+<br />
+{{/each}}
