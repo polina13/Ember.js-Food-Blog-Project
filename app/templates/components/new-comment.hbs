@@ -1,0 +1,16 @@
+{{#if addNewText}}
+<div>
+  <form>
+    <div class="form-group">
+      <label for="text">Text</label>
+      {{input value=text id="text"}}
+    </div>
+
+    <button class = "btn btn-danger" {{action 'saveText' }}>Save</button>
+
+    <button class = "btn btn-warning" {{action 'textFormHide' }} >Hide</button>
+  </form>
+</div>
+{{else}}
+<button class = "btn btn-danger"{{action 'textFormShow'}}>Add New Comment</button>
+{{/if}}
